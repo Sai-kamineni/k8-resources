@@ -4,6 +4,7 @@ metadata:
   name: nginx
 spec:
   containers:
-  # docker run -d --name nginx nginx
   - name: nginx
     image: nginx
+    image: almalinux:9
+    command: "sleep 200"
