@@ -1,9 +1,9 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: nginx-np
+  name: nginx-lb
 spec:
-  type: NodePort      #provide IP ip b/w range 30000 - 32767
+  type: LoadBalancer        #generate DNS record
   selector:
     project: expense
     module: backend
